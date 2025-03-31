@@ -3,7 +3,7 @@ import MediaPlayer from "../components/MediaPlayer";
 import { motion } from "motion/react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { colorStyle } from "../utils/index";
+import { colorStyle, decodeBase64 } from "../utils/index";
 import Left from "../assets/left.png";
 import Right from "../assets/right.png";
 
@@ -23,8 +23,9 @@ const Question = () => {
     // Load pre-selected movies from localStorage
     const encryptedMovies = window.localStorage.getItem("selectedMovies");
     const selectedMovies = encryptedMovies
-      ? JSON.parse(atob(encryptedMovies))
+      ? decodeBase64(encryptedMovies)
       : null;
+
     if (selectedMovies) {
       const movieIndex =
         (parseInt(roundNo) - 1) * totalQuestions + (parseInt(questionNo) - 1);
@@ -74,19 +75,6 @@ const Question = () => {
         </motion.button>
       </div>
 
-      <motion.button
-        whileTap={{
-          scale: 0.9,
-        }}
-        whileHover={{
-          scale: 1.1,
-        }}
-        onClick={() => navigate("/")}
-        className="fixed bottom-5 right-5 bg-red-500 text-white px-4 py-2 rounded cursor-pointer"
-      >
-        Exit to Home
-      </motion.button>
-
       <div className="space-y-4 w-[70%]">
         <h5 className="text-[#8796A0] font-black text-center text-2xl">
           Round {roundNo}
@@ -106,6 +94,19 @@ const Question = () => {
           <p className="text-white text-center">Loading...</p>
         )}
       </div>
+
+      <motion.button
+        whileTap={{
+          scale: 0.9,
+        }}
+        whileHover={{
+          scale: 1.1,
+        }}
+        onClick={() => navigate("/")}
+        className="fixed bottom-5 right-5 bg-red-500 text-white px-4 py-2 rounded cursor-pointer z-50"
+      >
+        Exit to Home
+      </motion.button>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import Footer from "../components/Footer";
 import moviesJson from "../data/movies.json";
 import { useNavigate } from "react-router-dom";
-import { colorStyle } from "../utils";
+import { colorStyle, encodeBase64 } from "../utils";
 
 import Logo from "../assets/logo.png";
 
@@ -55,7 +55,8 @@ export default function NameThatGame() {
       );
 
       // Store selected movies in local storage
-      const encryptedMovies = btoa(JSON.stringify(selectedMovies));
+      const encryptedMovies = encodeBase64(selectedMovies);
+
       localStorage.setItem("selectedMovies", encryptedMovies);
 
       navigate("/start");

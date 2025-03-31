@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, PlayCircle } from "lucide-react";
 import { useNavigate, useParams } from "react-router-dom";
 import CustomModal from "../components/CustomModal";
 import MediaPlayer from "../components/MediaPlayer";
-import { colorStyle } from "../utils";
+import { colorStyle, decodeBase64 } from "../utils";
 import Left from "../assets/left.png";
 import Right from "../assets/right.png";
 
@@ -21,9 +21,8 @@ export default function QuizAnswers() {
     // Load pre-selected movies from localStorage
     const encryptedMovies = window.localStorage.getItem("selectedMovies");
     const selectedMovies = encryptedMovies
-      ? JSON.parse(atob(encryptedMovies))
+      ? decodeBase64(encryptedMovies)
       : null;
-
     if (settings && selectedMovies) {
       const questionsPerRound = settings.questionsPerRound || 1;
       const startIndex = (parseInt(roundNo) - 1) * questionsPerRound;
@@ -140,6 +139,19 @@ export default function QuizAnswers() {
           />
         </div>
       </CustomModal>
+
+      <motion.button
+        whileTap={{
+          scale: 0.9,
+        }}
+        whileHover={{
+          scale: 1.1,
+        }}
+        onClick={() => navigate("/")}
+        className="fixed bottom-5 right-5 bg-red-500 text-white px-4 py-2 rounded cursor-pointer z-50"
+      >
+        Exit to Home
+      </motion.button>
     </div>
   );
 }
