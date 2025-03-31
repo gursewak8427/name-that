@@ -1,4 +1,9 @@
 import { useRef, useState, useEffect } from "react";
+import Tv from "../assets/tv.png";
+import Audio from "../assets/audio.png";
+import Pause from "../assets/pause.png";
+import Play from "../assets/play.png";
+import QueMark from "../assets/queMark.png";
 
 export default function MediaPlayer({ type, mediaSrc, isFull = false, title }) {
   const mediaRef = useRef(null);
@@ -47,30 +52,26 @@ export default function MediaPlayer({ type, mediaSrc, isFull = false, title }) {
     }
   }, [type, mediaSrc]);
 
-
-
   function formatTime(seconds) {
     const hrs = Math.floor(seconds / 3600);
     const mins = Math.floor((seconds % 3600) / 60);
     const secs = Math.floor(seconds % 60);
-    return `${hrs > 0 ? `${hrs}:` : ""}${mins.toString().padStart(2, "0")}:${secs
+    return `${hrs > 0 ? `${hrs}:` : ""}${mins
       .toString()
-      .padStart(2, "0")}`;
+      .padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
   }
-
 
   if (type === "video") {
     return (
       <div className="space-y-4">
-        {
-          isFull ? <div className="w-[85%] font-black text-2xl text-white text-center">
-            {title}
-          </div> : null
-        }
-        <div className={`absolute ${isFull ? '-bottom-5' : 'bottom-0'} left-1/2 transform -translate-x-1/2 ${isFull ? 'w-[85%]' : 'w-[70%]'} group cursor-pointer`}>
-
-
-          <img src="/src/assets/tv.png" alt="TV Frame" className="w-full" />
+        <div
+          className={`absolute ${
+            isFull ? "-bottom-5" : "bottom-0"
+          } left-1/2 transform -translate-x-1/2 ${
+            isFull ? "w-[85%]" : "w-[70%]"
+          } group cursor-pointer`}
+        >
+          <img src={Tv} alt="TV Frame" className="w-full" />
           <video
             ref={mediaRef}
             onTimeUpdate={handleProgress}
@@ -80,7 +81,7 @@ export default function MediaPlayer({ type, mediaSrc, isFull = false, title }) {
 
           <div className="hidden group-hover:block bg-black/20 p-4 rounded-lg absolute bottom-20 z-50 w-[90%] left-1/2 transform -translate-x-1/2">
             <div className="flex justify-end">
-              <img className="w-8" src="/src/assets/audio.png" />
+              <img className="w-8" src={Audio} />
               <input
                 type="range"
                 min="0"
@@ -95,9 +96,9 @@ export default function MediaPlayer({ type, mediaSrc, isFull = false, title }) {
             <div className="flex gap-4 p-4 items-center">
               <button onClick={togglePlay} className="text-white">
                 {playing ? (
-                  <img className="w-16" src="/src/assets/pause.png" />
+                  <img className="w-16" src={Pause} />
                 ) : (
-                  <img className="w-16" src="/src/assets/play.png" />
+                  <img className="w-16" src={Play} />
                 )}
               </button>
               <div className="w-full flex items-center gap-4 justify-center text-white mx-auto">
@@ -115,28 +116,22 @@ export default function MediaPlayer({ type, mediaSrc, isFull = false, title }) {
         </div>
       </div>
     );
-
   }
-
 
   // Audio Section
   return (
     <div className="w-full bg-black p-4 rounded-lg shadow-lg relative">
-      {(
+      {
         <div className="w-full flex items-center justify-center">
           <audio ref={mediaRef} onTimeUpdate={handleProgress} src={mediaSrc} />
           <div className="w-full rounded-2xl overflow-hidden">
-            <img
-              src="/src/assets/queMark.png"
-              alt="Audio Icon"
-              className="w-full"
-            />
+            <img src={QueMark} alt="Audio Icon" className="w-full" />
           </div>
         </div>
-      )}
+      }
 
       <div className="flex justify-end mt-4">
-        <img className="w-8" src="/src/assets/audio.png" />
+        <img className="w-8" src={Audio} />
         <input
           type="range"
           min="0"
@@ -151,9 +146,9 @@ export default function MediaPlayer({ type, mediaSrc, isFull = false, title }) {
       <div className="flex gap-4 p-4 flex-col items-center">
         <button onClick={togglePlay} className="text-white">
           {playing ? (
-            <img className="w-16" src="/src/assets/pause.png" />
+            <img className="w-16" src={Pause} />
           ) : (
-            <img className="w-16" src="/src/assets/play.png" />
+            <img className="w-16" src={Play} />
           )}
         </button>
         <div className="w-full flex items-center justify-center gap-4 text-white mx-auto">

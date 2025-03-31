@@ -4,6 +4,8 @@ import { motion } from "motion/react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { colorStyle } from "../utils/index";
+import Left from "../assets/left.png";
+import Right from "../assets/right.png";
 
 const Question = () => {
   const { questionNo, roundNo } = useParams();
@@ -59,7 +61,7 @@ const Question = () => {
           onClick={prevQuestion}
           className="cursor-pointer absolute left-0 top-0 w-[100px] h-auto flex items-center justify-center rounded-bl-[30px]"
         >
-          <img src="/src/assets/left.png" alt="" />
+          <img src={Left} alt="" />
         </motion.button>
         <motion.button
           whileTap={{
@@ -68,9 +70,22 @@ const Question = () => {
           onClick={nextQuestion}
           className="cursor-pointer absolute right-0 top-0 w-[100px] h-auto flex items-center justify-center rounded-bl-[30px]"
         >
-          <img src="/src/assets/right.png" alt="" />
+          <img src={Right} alt="" />
         </motion.button>
       </div>
+
+      <motion.button
+        whileTap={{
+          scale: 0.9,
+        }}
+        whileHover={{
+          scale: 1.1,
+        }}
+        onClick={() => navigate("/")}
+        className="fixed bottom-5 right-5 bg-red-500 text-white px-4 py-2 rounded cursor-pointer"
+      >
+        Exit to Home
+      </motion.button>
 
       <div className="space-y-4 w-[70%]">
         <h5 className="text-[#8796A0] font-black text-center text-2xl">

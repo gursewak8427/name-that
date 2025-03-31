@@ -5,7 +5,8 @@ import Footer from "../components/Footer";
 import moviesJson from "../data/movies.json";
 import { useNavigate } from "react-router-dom";
 import { colorStyle } from "../utils";
-import LeftButton from "../components/LeftButton";
+
+import Logo from "../assets/logo.png";
 
 const categories = Object.keys(moviesJson);
 
@@ -67,7 +68,7 @@ export default function NameThatGame() {
       style={colorStyle}
     >
       <h1 className="text-6xl font-bold text-[#FBD11E] mb-6">
-        <img alt="Logo" src="/src/assets/logo.png" />
+        <img alt="Logo" src={Logo} />
       </h1>
       <div className="flex items-center gap-12">
         <div className="flex flex-col items-center">

@@ -5,6 +5,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import CustomModal from "../components/CustomModal";
 import MediaPlayer from "../components/MediaPlayer";
 import { colorStyle } from "../utils";
+import Left from "../assets/left.png";
+import Right from "../assets/right.png";
 
 export default function QuizAnswers() {
   const [play, setPlay] = useState(null);
@@ -66,7 +68,7 @@ export default function QuizAnswers() {
           onClick={prevQuestion}
           className="cursor-pointer absolute left-0 top-0 w-[100px] h-auto flex items-center justify-center rounded-bl-[30px]"
         >
-          <img src="/src/assets/left.png" alt="" />
+          <img src={Left} alt="" />
         </motion.button>
         <motion.button
           whileTap={{
@@ -75,7 +77,7 @@ export default function QuizAnswers() {
           onClick={nextQuestion}
           className="cursor-pointer absolute right-0 top-0 w-[100px] h-auto flex items-center justify-center rounded-bl-[30px]"
         >
-          <img src="/src/assets/right.png" alt="" />
+          <img src={Right} alt="" />
         </motion.button>
       </div>
 
@@ -123,6 +125,7 @@ export default function QuizAnswers() {
       </div>
 
       <CustomModal
+        title={play?.title}
         open={play != null}
         onClose={() => {
           setPlay(null);

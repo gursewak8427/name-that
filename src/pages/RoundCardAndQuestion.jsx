@@ -2,6 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { colorStyle } from "../utils";
 import { useEffect, useState } from "react";
+import Logo from "../assets/logo.png";
 
 export default function RoundCard() {
   const { roundNo } = useParams();
@@ -19,7 +20,6 @@ export default function RoundCard() {
     });
   }, []);
 
-
   const loadSettings = async () => {
     let settings = window.localStorage.getItem("settings");
     if (settings) settings = JSON.parse(settings);
@@ -33,7 +33,7 @@ export default function RoundCard() {
       style={colorStyle}
     >
       <h2 className="text-[#FBD11E] font-bold text-lg uppercase pt-10">
-        <img alt="Logo" src="/src/assets/logo.png" />
+        <img alt="Logo" src={Logo} />
       </h2>
       <motion.div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] bg-white py-16 px-10 -ml-2 shadow-2xl"
