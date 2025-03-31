@@ -33,7 +33,15 @@ export default function NameThatGame() {
 
   const loadSettings = async () => {
     let settings = window.localStorage.getItem("settings");
-    if (settings) settings = JSON.parse(settings);
+    if (settings) {
+      settings = JSON.parse(settings);
+    } else {
+      settings = {
+        questionsPerRound: 3,
+        rounds: 2,
+      };
+      window.localStorage.setItem("settings", JSON.stringify(settings));
+    }
 
     return settings;
   };
