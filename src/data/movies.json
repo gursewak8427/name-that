@@ -1,0 +1,262 @@
+{
+  "1980s Edition": [
+    {
+      "title": "Back to the Future - Time Travel Adventure",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "title": "E.T. the Extra-Terrestrial - Alien Encounter",
+      "type": "audio",
+      "url": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+    },
+    {
+      "title": "The Terminator - Rise of the Machines",
+      "type": "audio",
+      "url": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+    },
+    {
+      "title": "Ghostbusters - Paranormal Investigators",
+      "type": "audio",
+      "url": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+    },
+    {
+      "title": "Ferris Bueller's Day Off - High School Rebel",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+    },
+    {
+      "title": "The Breakfast Club - A High School Detention",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+    },
+    {
+      "title": "Die Hard - The Ultimate Action Thriller",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+    },
+    {
+      "title": "Blade Runner - A Cyberpunk Future",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "title": "Top Gun - High-Flying Action",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+    },
+    {
+      "title": "Indiana Jones and the Last Crusade - Treasure Hunt",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+    }
+  ],
+  "1990s Edition": [
+    {
+      "title": "Titanic - A Love Story on the Sea",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "title": "Jurassic Park - Dinosaur Resurrection",
+      "type": "video",
+      "url": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+    },
+    {
+      "title": "The Matrix - Enter the Digital World",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "title": "Forrest Gump - Life is Like a Box of Chocolates",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+    },
+    {
+      "title": "The Lion King - A Tale of a King",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+    },
+    {
+      "title": "Saving Private Ryan - War and Sacrifice",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+    },
+    {
+      "title": "The Sixth Sense - I See Dead People",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+    },
+    {
+      "title": "Fight Club - The First Rule of Fight Club",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "title": "Good Will Hunting - A Genius Among Us",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+    },
+    {
+      "title": "The Green Mile - A Miraculous Tale",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+    }
+  ],
+  "Christmas Edition": [
+    {
+      "title": "Home Alone - The Ultimate Holiday Prank",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "title": "Elf - The Funniest Christmas Journey",
+      "type": "video",
+      "url": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+    },
+    {
+      "title": "The Polar Express - A Magical Train Ride",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "title": "A Christmas Story - The Classic Holiday Tale",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+    },
+    {
+      "title": "The Grinch - How He Stole Christmas",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+    },
+    {
+      "title": "Miracle on 34th Street - Believe in Santa",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+    },
+    {
+      "title": "The Santa Clause - Becoming Santa",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+    },
+    {
+      "title": "Love Actually - A Christmas Romance",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "title": "Jingle All The Way - The Holiday Rush",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+    },
+    {
+      "title": "Die Hard - The Ultimate Christmas Action",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+    }
+  ],
+  "Halloween Edition": [
+    {
+      "title": "Hocus Pocus - The Witch Sisters' Return",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "title": "Halloween - The Night He Came Home",
+      "type": "video",
+      "url": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+    },
+    {
+      "title": "The Nightmare Before Christmas - A Spooky Holiday Mix",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "title": "Scream - The Masked Killer",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+    },
+    {
+      "title": "It - The Dancing Clown of Nightmares",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+    },
+    {
+      "title": "The Exorcist - A Possessed Horror",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+    },
+    {
+      "title": "The Conjuring - Haunted by Spirits",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+    },
+    {
+      "title": "Friday the 13th - The Camp Nightmare",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "title": "The Shining - Come Play With Us",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+    },
+    {
+      "title": "A Nightmare on Elm Street - Don't Fall Asleep",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+    }
+  ],
+  "Tom Cruise Edition": [
+    {
+      "title": "Top Gun - High-Flying Action",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    },
+    {
+      "title": "Mission Impossible - Spy Thriller",
+      "type": "video",
+      "url": "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+    },
+    {
+      "title": "Rain Man - A Brother's Bond",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "title": "Jerry Maguire - Show Me the Money",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+    },
+    {
+      "title": "The Last Samurai - Honor and Sacrifice",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+    },
+    {
+      "title": "Edge of Tomorrow - Live, Die, Repeat",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+    },
+    {
+      "title": "Minority Report - Future Crime Prevention",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+    },
+    {
+      "title": "A Few Good Men - You Can't Handle the Truth",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+    },
+    {
+      "title": "Collateral - A Deadly Night in LA",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+    },
+    {
+      "title": "Oblivion - A Dystopian Future",
+      "type": "video",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+    }
+  ]
+}
