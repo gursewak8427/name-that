@@ -3,7 +3,11 @@ export const colorStyle = {
     "radial-gradient(51.73% 68.18% at 50% 50%, #005D9D 0%, #053B60 100%)",
 };
 
+
+// Encryption disabled due to vercel, it created issue with atob and Buffer both, need to fix.
 export const encodeBase64 = (data) => {
+  return JSON.stringify(data);
+
   if (typeof window !== "undefined") {
     // Browser environment
     return btoa(JSON.stringify(data));
@@ -13,7 +17,10 @@ export const encodeBase64 = (data) => {
   }
 };
 
+// Encryption disabled due to vercel, it created issue with atob and Buffer both, need to fix.
 export const decodeBase64 = (encodedData) => {
+  return JSON.stringify(encodedData);
+
   if (typeof window !== "undefined") {
     // Browser environment
     return JSON.parse(atob(encodedData));
